@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1976D2"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/login"
+        android:textColor="#689F38"
+        android:textSize="50sp"
+        android:layout_marginTop="70dp"
+        android:textStyle="bold|italic" />
+
+    <RelativeLayout
+        android:layout_width="360dp"
+        android:layout_height="360dp"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="?actionBarSize"
+        android:layout_marginEnd="?actionBarSize"
+        android:alpha="0.5"
+        android:background="@drawable/rounded_login_ui"
+        android:backgroundTint="#B3B1B1"
+        android:elevation="60dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/userName"
+            android:layout_width="240dp"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:layout_margin="10dp"
+            android:alpha="0.4"
+            android:background="@color/black"
+            android:hint="@string/user_name"
+            android:inputType="textPersonName"
+            android:textColorHint="@color/black" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/password"
+            android:layout_width="240dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/userName"
+            android:layout_centerInParent="true"
+            android:alpha="0.4"
+            android:background="@color/black"
+            android:hint="@string/password"
+            android:textColorHint="@color/black"/>
+        
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/password"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="35dp"
+            android:alpha="1"
+            android:background="@color/white"
+            app:backgroundTint="@color/white"
+            android:text="@string/submit"
+            android:textColor="@color/black"/>
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

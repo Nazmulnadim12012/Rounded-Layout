@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Layout with rounded corner</string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="user_name">User name</string>
+    <string name="submit">Submit</string>
+</resources>
