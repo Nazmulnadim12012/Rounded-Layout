@@ -53,12 +53,14 @@
             android:textColorHint="@color/black"/>
         
         <com.google.android.material.button.MaterialButton
+            android:id="@+id/submitButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/password"
             android:layout_centerInParent="true"
             android:layout_marginTop="35dp"
             android:alpha="1"
+            android:enabled="false"
             android:background="@color/white"
             app:backgroundTint="@color/white"
             android:text="@string/submit"
